@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinCRUD.Views.NewUserPage"
+             xmlns:ViewModels="clr-namespace:XamarinCRUD.ViewModels;assembly=XamarinCRUD">
+    <ContentPage.BindingContext>
+     <ViewModels:MainViewModel/>
+    </ContentPage.BindingContext>
+
+
+
+    <StackLayout Orientation="Vertical"
+               >
+        <Label Text="Username"/>
+        <Entry Text="{Binding SelectedUser.Username, Mode=TwoWay}"/>
+        <Label Text="Name"/>
+        <Entry Text="{Binding SelectedUser.Name, Mode=TwoWay}"/>
+        <Label Text="Password"/>
+        <Entry Text="{Binding SelectedUser.Password, Mode=TwoWay}"/>
+        <Label Text="Address"/>
+        <Entry Text="{Binding SelectedUser.Address, Mode=TwoWay}"/>
+        <Label Text="Vehicle Number"/>
+        <Entry Text="{Binding SelectedUser.Vehicle_no, Mode=TwoWay}"/>
+
+
+        <Button Text="Update"
+                Command="{Binding PutCommand}"/>
+        <Button Text="Delete"
+                Command="{Binding DeleteCommand}"/>
+        <Button Text="Add"
+                Command="{Binding PostingCommand}"/>
+    </StackLayout>
+
+
+</ContentPage>

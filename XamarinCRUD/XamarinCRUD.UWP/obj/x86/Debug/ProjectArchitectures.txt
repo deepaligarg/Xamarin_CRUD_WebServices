@@ -1,0 +1,2 @@
+C:\Users\deepa\documents\visual studio 2017\Projects\XamarinCRUD\XamarinCRUD\XamarinCRUD.UWP\XamarinCRUD.UWP.csproj;x86
+C:\Users\deepa\documents\visual studio 2017\Projects\XamarinCRUD\XamarinCRUD\XamarinCRUD\XamarinCRUD.csproj;neutral
